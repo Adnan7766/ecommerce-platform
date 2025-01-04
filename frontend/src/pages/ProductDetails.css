@@ -1,0 +1,114 @@
+/* Product Details Page Styles */
+.product-details-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #f8f8f8; /* Soft background color */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    border-radius: 10px;
+  }
+  
+  .product-image {
+    flex: 1;
+    min-width: 300px;
+    max-width: 500px;
+    text-align: center;
+  }
+  
+  .product-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease; /* Smooth image zoom effect */
+  }
+  
+  .product-image img:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+  }
+  
+  .product-info {
+    flex: 2;
+    min-width: 300px;
+    padding: 20px;
+  }
+  
+  .product-info h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: #045e5e; /* Custom teal color */
+    font-weight: bold;
+  }
+  
+  .product-info .price {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #d9534f; /* Accent color */
+    margin-bottom: 20px;
+  }
+  
+  .product-info .description {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    line-height: 1.6;
+    color: #555; /* Slightly darker text for readability */
+  }
+  
+  .product-actions {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .product-actions button {
+    flex: 1;
+    padding: 15px;
+    font-size: 1rem;
+    background-color: #045e5e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .product-actions button:hover {
+    background-color: #033e3e; /* Darker shade on hover */
+    transform: scale(1.05); /* Button grows slightly on hover */
+  }
+  
+  .product-actions button:focus {
+    outline: none; /* Removes default outline on focus */
+  }
+  
+  /* Footer Styling */
+   
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .product-details-container {
+      flex-direction: column;
+      align-items: center;
+      padding: 10px;
+    }
+  
+    .product-image,
+    .product-info {
+      width: 100%;
+      text-align: center;
+    }
+  
+    .product-actions {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .product-actions button {
+      width: 100%;
+    }
+  }
+  

@@ -1,0 +1,49 @@
+/* User Card Styles */
+.user-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 250px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+    cursor: pointer;
+    margin: 20px;
+  }
+  
+  .user-card:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+  }
+  
+  .user-card h3 {
+    font-size: 1.5rem;
+    color: #045e5e;
+    margin: 0;
+  }
+  
+  .user-card p {
+    font-size: 1rem;
+    color: #555;
+    margin: 10px 0;
+  }
+  
+  .user-card .more-info {
+    display: none;
+    color: #333;
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+  
+  .user-card:hover .more-info {
+    display: block; /* Show extra details on hover */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .user-card {
+      width: 100%;
+      margin: 10px;
+    }
+  }
+  

@@ -1,0 +1,68 @@
+.add-user {
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: center;
+  }
+  
+  .add-user h2 {
+    color: #045e5e;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .add-user form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .add-user input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .add-user button {
+    padding: 12px;
+    font-size: 1rem;
+    background-color: #045e5e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .add-user button:disabled {
+    background-color: #ccc;
+  }
+  
+  .add-user button:hover:not(:disabled) {
+    background-color: #033e3e;
+  }
+  
+  .success-message {
+    color: #28a745;
+    margin-top: 20px;
+    font-size: 1.2rem;
+  }
+  
+  .error-message {
+    color: #dc3545;
+    margin-top: 20px;
+    font-size: 1.2rem;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .add-user {
+      width: 90%;
+    }
+  }
+  

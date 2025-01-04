@@ -1,0 +1,65 @@
+/* Navbar styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #045e5e;
+    color: white;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .navbar h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .navbar ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .navbar ul li {
+    margin-right: 20px;
+  }
+  
+  .navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+  }
+  
+  .navbar ul li a:hover {
+    color: #d9534f; /* Highlight color on hover */
+    border-bottom: 2px solid #d9534f; /* Underline effect */
+  }
+  
+  .navbar ul li:last-child {
+    margin-right: 0; /* Remove right margin from the last list item */
+  }
+  
+  /* Mobile responsiveness */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .navbar ul {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .navbar ul li {
+      margin-bottom: 15px;
+    }
+  
+    .navbar ul li a {
+      font-size: 1.2rem;
+    }
+  }
+  

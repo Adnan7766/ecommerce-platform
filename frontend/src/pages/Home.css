@@ -1,0 +1,325 @@
+/* General Styling */
+.home-container {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    padding: 0px;
+    color: #333;
+  }
+  
+  .home-banner {
+    /* background-image: url('/images/banner.jpg'); */
+    background-size: cover;
+    background-position: center;
+    padding: 100px 2px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    text-align: center;
+    border-radius: 8px;
+  }
+  
+  .home-banner h1 {
+    font-size: 3rem;
+    font-weight: 700;
+  }
+  
+  .home-banner p {
+    font-size: 1.5rem;
+    margin: 10px 0;
+  }
+  
+  .home-banner button {
+    background-color: #007bff;
+    color: white;
+    font-size: 1.2rem;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .home-banner button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Categories Section */
+  .categories-section {
+    margin-top: 60px;
+    padding: 20px;
+  }
+  
+  .categories-list {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+  }
+  
+  .category-card {
+    width: 250px;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 8px ;
+    text-align: center;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .category-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .category-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .category-card h3 {
+    font-size: 1.4rem;
+    color: #333;
+    margin: 15px 0;
+  }
+  
+  .category-card button {
+    background-color: #ff6347;
+    color: white;
+    font-size: 1rem;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .category-card button:hover {
+    background-color: #e5533d;
+  }
+  
+  /* Featured Products Section */
+  .featured-products {
+    margin-top: 60px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  }
+  
+  .featured-products h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  
+  .product-list {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+  }
+  
+  .product-card {
+    width: 250px;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .product-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .product-card h3 {
+    font-size: 1.4rem;
+    margin: 15px 0;
+  }
+  
+  .product-card p {
+    color: #777;
+  }
+  
+  .product-card .price {
+    font-size: 1.6rem;
+    color: #28a745;
+    font-weight: bold;
+  }
+  
+  .product-card button {
+    background-color: #007bff;
+    color: white;
+    font-size: 1rem;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .product-card button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Customer Reviews Section */
+  .customer-reviews {
+    margin-top: 60px;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+  }
+  
+  .customer-reviews h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .reviews-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+  
+  .review-card {
+    background-color: #fff;
+    padding: 15px;
+    width: 80%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-style: italic;
+  }
+  
+  .review-card h3 {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+  }
+  
+  .review-card p {
+    color: #555;
+  }
+  
+  .rating {
+    margin-top: 10px;
+    color: gold;
+  }
+  
+  /* Promotions Section */
+  .promotions {
+    margin-top: 60px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  }
+  
+  .promotions h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .promotion-cards {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+  }
+  
+  .promotion-card {
+    background-color: #ffeb3b;
+    padding: 25px;
+    width: 250px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+  }
+  
+  .promotion-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .promotion-card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+  }
+  
+  .promotion-card p {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+  }
+  
+  .promotion-card button {
+    background-color: #28a745;
+    color: white;
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .promotion-card button:hover {
+    background-color: #218838;
+  }
+  
+  /* Newsletter Section */
+  .newsletter {
+    background-color: #e7e7e7;
+    padding: 40px;
+    text-align: center;
+    border-radius: 8px;
+    margin-top: 60px;
+  }
+  
+  .newsletter h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .newsletter p {
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
+  .newsletter-form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .newsletter-form input {
+    padding: 12px 20px;
+    font-size: 1rem;
+    border-radius: 30px;
+    border: 1px solid #ccc;
+    width: 300px;
+  }
+  
+  .newsletter-form button {
+    padding: 12px 20px;
+    background-color: #007bff;
+    color: white;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .newsletter-form button:hover {
+    background-color: #0056b3;
+  }
+  
