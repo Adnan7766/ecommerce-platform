@@ -1,0 +1,11 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "swa: start frontend",
+            "type": "shell",
+            "command": "npm run start-frontend",
+            "problemMatcher": []
+        }
+    ]
+}
